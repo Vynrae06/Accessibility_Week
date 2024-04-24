@@ -14,14 +14,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 hopefulAcceleration = Input.gyro.userAcceleration;
+        //Vector3 hopefulAcceleration = Input.gyro.userAcceleration;
+        Vector3 hopefulAcceleration = Input.acceleration;
+        float limitValue = 0.10f;
 
         float accelerationX = hopefulAcceleration.x;
         float accelerationY = hopefulAcceleration.y;
         float accelerationZ = hopefulAcceleration.z;
         
-        if(accelerationX >= 0.025 || accelerationX <= -0.025)
-            transform.Translate(new Vector3(-accelerationX, 0, 0) * 10, Space.World);
+        if(accelerationX >= limitValue)
+            transform.Translate(new Vector3(-accelerationX/10, 0, 0));
+        else if(accelerationX <= -limitValue)
+            transform.Translate(new Vector3(-accelerationX/10, 0, 0));
         //if(accelerationY != 0)
             //transform.Translate(0, accelerationY, 0);
         

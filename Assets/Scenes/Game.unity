@@ -205,12 +205,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.25}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1911600095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911600090 stripped
 GameObject:
@@ -269,6 +269,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1911600095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3275709731386857770, guid: a55726ccfe5a3164786debe5ae06b951, type: 3}
+  m_PrefabInstance: {fileID: 3974010570351247465}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3974010570351247465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -339,7 +344,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3275709731386857770, guid: a55726ccfe5a3164786debe5ae06b951, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519420032}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6565800049731453457, guid: a55726ccfe5a3164786debe5ae06b951, type: 3}
       insertIndex: -1
@@ -383,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9206759680590032389, guid: 87a5fa11c3c807e44bf83780d0f46490, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9206759680590032389, guid: 87a5fa11c3c807e44bf83780d0f46490, type: 3}
       propertyPath: m_LocalRotation.w
@@ -422,6 +430,5 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 3974010570351247465}
   - {fileID: 5105241556825584058}
